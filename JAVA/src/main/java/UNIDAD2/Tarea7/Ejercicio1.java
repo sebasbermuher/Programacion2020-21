@@ -8,7 +8,14 @@ import java.util.Scanner;
 public class Ejercicio1 {
   public static void main(String[] args) {
     Scanner teclado = new Scanner(System.in);
-    int num1 = teclado.nextInt();
-    int num2 = teclado.nextInt();
+    System.out.println("Introduce dos numeros");
+    int a = teclado.nextInt();
+    int b = teclado.nextInt();
+    int aux;
+    System.out.println("Valores iniciales: A=" + a + " B=" + b);
+    aux = a;
+    a = b;
+    b = aux;
+    System.out.println("Valores iniciales: A=" + a + " B=" + b);
   }
 }
