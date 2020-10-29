@@ -26,17 +26,17 @@ public class Ejercicio5 {
 
     for (int i = 0; i <= frase.length(); i++) {
       for (int j = 0; j <= i; j++) {
-        String car = frase.substring(j, i);
+        String caracter = frase.substring(j, i);
 
-        if (car.equals(h)) {
+        if (caracter.equals(h)) {
           contador++;
-        } else if (car.equals(o)) {
+        } else if (caracter.equals(o)) {
           contador++;
-        } else if (car.equals(a)) {
+        } else if (caracter.equals(a)) {
           contador++;
-        } else if (car.equals(e)) {
+        } else if (caracter.equals(e)) {
           contador++;
-        } else if (car.equals(" ")) {
+        } else if (caracter.equals(" ")) {
           contador++;
         }
       }
