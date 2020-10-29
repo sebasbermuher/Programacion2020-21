@@ -1,6 +1,17 @@
+/*
+Dada una cadena mostrar por pantalla la cantidad de espacios, haches y vocales
+abiertas tiene, independientemente de que sean mayúsculas, minúsculas o acentuadas.
+Las vocales abiertas son a, e, o.
+
+Ejemplo:
+Entrada: cad = "Hipólito el Ánodo"
+Salida: La cantidad de espacios, haches y vocales abiertas es 9
+*/
+package UNIDAD2.U2_Entrega;
+
 import java.util.Scanner;
 
-public class PRUEBA {
+public class Ejercicio5 {
   public static void main(String[] args) {
     Scanner teclado = new Scanner(System.in);
 
@@ -30,6 +41,6 @@ public class PRUEBA {
         }
       }
     }
-    System.out.println("La cantidad de espacios, haches y vocales abiertas es " + contador);
+    System.out.println("La cantidad de espacios, haches y vocales abiertas es: " + contador);
   }
 }
