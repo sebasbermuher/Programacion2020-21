@@ -4,7 +4,7 @@ abiertas tiene, independientemente de que sean mayúsculas, minúsculas o acentu
 Las vocales abiertas son a, e, o.
 
 Ejemplo:
-Entrada: cad = "Hipólito el Ánodo"
+Entrada: cad = "Hipólito el ánodo"
 Salida: La cantidad de espacios, haches y vocales abiertas es 9
 */
 package UNIDAD2.U2_Entrega;

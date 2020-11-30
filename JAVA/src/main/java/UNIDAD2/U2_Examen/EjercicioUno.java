@@ -10,7 +10,7 @@ package UNIDAD2.U2_Examen;
 
 import java.util.Scanner;
 
-public class Ejercicio1 {
+public class EjercicioUno {
   public static void main(String[] args) {
     Scanner teclado = new Scanner(System.in);
     System.out.println("Introduce un numero para las filas");

@@ -8,7 +8,7 @@ package UNIDAD2.U2_Examen;
 
 import java.util.Scanner;
 
-public class Ejercicio2 {
+public class EjercicioDos {
   public static void main(String[] args) {
     Scanner teclado = new Scanner(System.in);
 
