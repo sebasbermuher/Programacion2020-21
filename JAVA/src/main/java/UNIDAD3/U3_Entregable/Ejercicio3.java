@@ -3,7 +3,7 @@ Hacer una algoritmo que solicite al usuario una cifra N y rellene un array bidim
 con número aleatorios entre 100 y 200.
 Mostrar dicho array y a continuación rotarlo 90 grados:
  */
-package UNIDAD3.U3.Entregable;
+package UNIDAD3.U3_Entregable;
 
 import java.util.Scanner;
 

@@ -11,7 +11,7 @@ Para comprobar que el juego está correcto se mostrar el tablero del juego cada 
 (hasta que el usuario encuentre una bomba).
 NOTA: Podemos hacer la lectura de la posición como consideremos más oportuno.
  */
-package UNIDAD3.U3.Entregable;
+package UNIDAD3.U3_Entregable;
 
 import java.util.Scanner;
 

@@ -16,7 +16,7 @@ public class Ejercicio1 {
     System.out.println("Escribe una palabra: ");
     String palabra = teclado.nextLine();
 
-    while (!palabra.toLowerCase().equals("fin")) {
+    while (!palabra.equals("fin")) {
       frase = frase + " " + palabra;
 
       System.out.println("Escribe una palabra: ");

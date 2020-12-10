@@ -12,10 +12,10 @@ public class Ejercicio2 {
     int nummenor = 0;
 
     System.out.println("Introduce dos numeros enteros: ");
-    int num = teclado.nextInt();
+    int num1 = teclado.nextInt();
     int num2 = teclado.nextInt();
 
-    comprendido(num, num2);
+    comprendido(num1, num2);
   }
 
   public static void comprendido(int num1, int num2) {

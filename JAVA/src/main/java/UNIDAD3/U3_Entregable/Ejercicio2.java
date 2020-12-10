@@ -12,7 +12,7 @@ desde el programa principal.
 4 . . . . _ 9 _ _ _ _ .
 5 . . . . . 0 _ _ _ _ _
  */
-package UNIDAD3.U3.Entregable;
+package UNIDAD3.U3_Entregable;
 
 import java.util.Scanner;
 
