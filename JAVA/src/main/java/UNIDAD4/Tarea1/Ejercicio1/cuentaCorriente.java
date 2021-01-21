@@ -1,42 +1,36 @@
 package UNIDAD4.Tarea1.Ejercicio1;
 
-public class cuentaCorriente {
-  // Atributos:
-  private long saldo;
-  private long limite;
-  private String nombre;
-  private String dni;
+class CuentaCorriente {
+  double saldo;
+  String nombre;
+  String dni;
+  double limite;
 
-  void crear_cuenta(String nombre_titular, String dni) {
-    this.nombre = nombre_titular;
-    this.dni = dni;
-    this.saldo = 0;
-    this.limite = -50;
+  CuentaCorriente(String nombre_titular, String dni){
+    saldo=0;
+    this.nombre=nombre_titular;
+    this.dni=dni;
+    limite=-50;
   }
-
-  boolean sacar(int cantidad) {
-    boolean resultado = false;
-    if (this.saldo - cantidad >= this.limite) {
-      this.saldo -= cantidad;
+  boolean sacar(double cant){ //sacar dinero de la cuenta
+    boolean operacionPosible;
+    if ((saldo-cant)>=limite){
+      saldo-=cant;
+      operacionPosible=true;
+      }else{
+      System.out.println("No hay dinero suficiente");
+      operacionPosible=false;
     }
-    return true;
+    return(operacionPosible);
   }
-
-  void ingresar(int cantidad) {
-    if (cantidad > 0) {
-      this.saldo += cantidad;
-    }
+  //añadir dinero a la cuenta
+  void ingreso(double cant){
+    saldo+=cant;
   }
-
-  void mostrar_informacion() {
-    System.out.println(
-        "El saldo de la cuenta es "
-            + saldo
-            + ", el limite es "
-            + limite
-            + ", el nombre del titular es "
-            + nombre
-            + ", y su DNI es "
-            + dni);
+  void mostrarInformacion(){ //muestra el estado de la cuenta
+    System.out.println("Nombre: " + nombre);
+    System.out.println("Dni; " + dni);
+    System.out.println("Saldo: " + saldo);
+    System.out.println("Limite descubierto: " + limite);
   }
 }

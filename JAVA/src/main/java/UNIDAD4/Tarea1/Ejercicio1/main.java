@@ -14,24 +14,13 @@ package UNIDAD4.Tarea1.Ejercicio1;
 
 public class main {
   public static void main(String[] args) {
+    CuentaCorriente c1= new CuentaCorriente("Sebastian", "12345678A");
+    c1.limite=-100;
+    c1.ingreso(1000);
+    c1.sacar(300);
+    c1.mostrarInformacion();
 
-    cuentaCorriente c1 = new cuentaCorriente();
-    c1.crear_cuenta("Sebastian", "85236974J");
-    c1.mostrar_informacion();
-
-    if (c1.sacar(60)) {
-      System.out.println("He podido sacar dinero");
-    } else {
-      System.out.println("No he podido sacar dinero");
-    }
-    if (c1.sacar(20)) {
-      System.out.println("He podido sacar dinero");
-    } else {
-      System.out.println("No he podido sacar dinero");
-    }
-    c1.mostrar_informacion();
-
-    c1.ingresar(519);
-    c1.mostrar_informacion();
+    System.out.println("Puedo sacar 700€: " + c1.sacar(700));
+    System.out.println("Puedo sacar 300€: " + c1.sacar(500));
   }
 }
