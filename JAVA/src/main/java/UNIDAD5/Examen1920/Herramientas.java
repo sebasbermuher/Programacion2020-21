@@ -1,2 +1,4 @@
-package UNIDAD5.Examen1920;public class Herramientas {
+package UNIDAD5.Examen1920;
+
+public abstract class Herramientas extends Materiales{
 }
