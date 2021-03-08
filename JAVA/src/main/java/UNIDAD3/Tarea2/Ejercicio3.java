@@ -1,6 +1,6 @@
 /*
 Pedir el nombre completo (nombre y apellidos) al usuario. El programa debe eliminar cualquier vocal del nombre.
- Por ejemplo: "Álvaro Pérez" se mostrará como "lvr Prz". Sólo se eliminarán las vocales
+ Por ejemplo: "Alvaro Perez" se mostrará como "lvr Prz". Sólo se eliminarán las vocales
  (mayúsculas, minúsculas y acentuadas). El resto de caracteres no se modifican.
  */
 package UNIDAD3.Tarea2;
