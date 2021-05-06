@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<alumnos>
+	<alumno>
+		<nombre>Sebastian</nombre>
+		<apellidos>Bermudez Herrera</apellidos>
+	</alumno>
+	<alumno>
+		<nombre>Isidro</nombre>
+		<apellidos>Perez Padilla</apellidos>
+	</alumno>
+</alumnos>

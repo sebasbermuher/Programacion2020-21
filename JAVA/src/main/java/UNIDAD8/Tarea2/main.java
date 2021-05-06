@@ -1,5 +1,5 @@
 /*
-a) Crea un fichero “FichPersona.dat”,  y almacena varios objetos persona.
+a) Crea un fichero "FichPersona.dat",  y almacena varios objetos persona.
 b) Tomando como base el fichero anterior, crea un documento XML usando DOM.
 c) Prueba los parsers de la Tarea 1 para comprobar que permiten leer el documento XML que has
    generado en el apartado anterior.
