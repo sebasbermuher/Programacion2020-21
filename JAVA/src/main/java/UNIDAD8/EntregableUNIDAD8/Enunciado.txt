@@ -1,0 +1,18 @@
+EJERCICIO 4: RECORRIENDO DOM
+Crear una clase RecorridoDOM donde desde el método Main se llama a los siguientes métodos (que deberán ser estáticos):
+1) mostrarXML que partiendo del nodo raíz mostrará por pantalla el menú.
+2) cantidadDePlatos que mostrará por pantalla el número de platos de la carta.
+3) platoMasCaro que mostrará por pantalla el nombre y el precio del plato más caro.
+
+
+EJERCICIO 2: MODIFICANDO DOM
+Partiendo el ejercicio1.xml crear una clase ModificacionDOM que:
+1) Añada una nueva comida al menú solicitando los datos al usuario.
+2) Inserte al final de cada nodo food (incluido el nuevo) la siguiente etiqueta <healthy>true</healthy>
+3) Escriba todo esto en un fichero llamado ejercicio2.xml
+
+
+EJERCICIO 3: STAX
+1)Utilizando el parserStax crear una clase llamada RecorridoStax que:
+2)Muestre por pantalla el número de platos que componen el menú
+Que muestre por pantalla el número de calorías que tomariamos si pidiéramos un plato de todas las entradas del menú.
