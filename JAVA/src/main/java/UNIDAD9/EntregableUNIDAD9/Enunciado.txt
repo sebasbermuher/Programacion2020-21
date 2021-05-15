@@ -1,0 +1,33 @@
+En la clase Consultas crear y ejecutar las siguientes funciones:
+
+- PagosCliente() que solicita al usuario un número de cliente (customerNumber) y muestre por pantalla el
+nombre del cliente (contactFirstName), su apellido (contactLastName), país (country)  y la suma de todos
+los pagos realizados por dicho cliente. Esta consulta será realizada con un Statement.
+
+- InfoPedido() que solicita al usuario el número del pedido (orderNumber) y muestra por pantalla el nombre,
+ precio y cantidad de todos los productos incluídos en el pedido así como el coste total del mismo.
+ Está consulta será realizada con un PreparedStatement.
+
+- DatosJefe() que solicita el número de un empleado (employeeNumber) y muestra por pantalla el
+nombre(firstName) y los apellidos(lastName) de su jefe. Está consulta será realizada con un PreparedStatement.
+
+
+Realiza dos transacciones dentro de la clase Transacciones (todas con PreparedStatements)
+
+1.- Insertar una nueva oficina en Sevilla con dos nuevos empleados. Insertar un nuevo cliente que esté
+relacionado con uno de los empleados de la oficina nueva.
+
+2.- Insertar una nueva categoría de productos (productLine) y posteriormente un producto que pertenezca
+a dicha catgoría previamente insertada.
+
+Tanto para las consultas como para las transacciones utilizaremos una clase Singelton ConexionDB que
+tenga un método estática que se encarge de crear de manera correcta la conexión a la BD (de igual manera que los ejemplo de transacciones que hemos visto en clase).
+
+Para los datos, puedes abrir las diferentes tablas para comprobar a qué se refiere cada uno de los campos
+y el tipo que es, así te puede servir de inspiración.
+
+En ningún caso, la BD puede tener una oficina nueva sin empleados, un cliente sin empleado y una categoría
+(productLine) sin productos asociados.
+
+Toma las decisiones de diseño que consideres necesarias, creando las clases y consultas correspondientes.
+Todas las consultas deberán ser preparedStatements.
