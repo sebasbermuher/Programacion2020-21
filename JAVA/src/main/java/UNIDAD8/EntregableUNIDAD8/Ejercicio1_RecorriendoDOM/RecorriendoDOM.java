@@ -60,7 +60,6 @@ public class RecorriendoDOM {
     }
 
     public static void cantidadDePlatos(Document archivo){
-
         NodeList cantidad_platos = archivo.getElementsByTagName("food"); //devuelve los elementos con el nombre introducido -->(food)
         //salto de linea para separarlo del parseado
         System.out.println();

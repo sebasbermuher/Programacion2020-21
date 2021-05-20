@@ -22,7 +22,7 @@ public class LecturaXMLStax {
         try {
             //Obtenemos el lector de XML
             XMLInputFactory xmlInputFactory = XMLInputFactory.newInstance();
-            XMLEventReader xmlReader = xmlInputFactory.createXMLEventReader(new FileInputStream("JAVA/src/main/java/pruebaSTAX/Lectura/alumnos.xml"));
+            XMLEventReader xmlReader = xmlInputFactory.createXMLEventReader(new FileInputStream("JAVA/src/main/java/UNIDAD8/pruebaSTAX/Lectura/alumnos.xml"));
 
             //Recorro la lista de eventos. Soy yo el que los va obteniendo PULL con nextEvent()
             while (xmlReader.hasNext()){

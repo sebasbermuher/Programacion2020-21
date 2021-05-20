@@ -22,6 +22,7 @@ public class Ejercicio1 {
       System.out.println("Escribe una palabra: ");
       palabra = teclado.nextLine();
     }
-    System.out.println(frase);
+
+    System.out.println(frase.substring(1));//substring para quitar el primer espacio
   }
 }

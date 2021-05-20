@@ -28,7 +28,7 @@ public class EscrituraXMLStax {
 
             //Creo el objeto que me va a servir para escribir
             XMLOutputFactory xmlOutputFactory = XMLOutputFactory.newInstance();
-            XMLEventWriter xmlWriter = xmlOutputFactory.createXMLEventWriter(new FileOutputStream("JAVA/src/main/java/pruebaSTAX/alumnos.xml"));
+            XMLEventWriter xmlWriter = xmlOutputFactory.createXMLEventWriter(new FileOutputStream("JAVA/src/main/java/UNIDAD8/pruebaSTAX/alumnos.xml"));
 
             //Creo el objeto que me va a servir para crear los eventos
             XMLEventFactory eventFactory = XMLEventFactory.newInstance();
@@ -68,7 +68,7 @@ public class EscrituraXMLStax {
 
 
 
-                //Creo todas las etiquetas de cierre que va a tener cada uno de los pedidos
+                //Creo todas las etiquetas de cierre que va a tener cada uno de los alumnos
                 EndElement alumnoEnd = eventFactory.createEndElement("","","alumno");
                 EndElement nombreEnd = eventFactory.createEndElement("","","nombre");
                 EndElement apellidosEnd = eventFactory.createEndElement("","","apellidos");
@@ -89,7 +89,7 @@ public class EscrituraXMLStax {
                 xmlWriter.add(saltoDeLineaTab);
                 xmlWriter.add(tabulador);
 
-                //Lo hijos de cada pedido
+                //Lo hijos de cada alumnos
                 xmlWriter.add(nombreStart);
                 xmlWriter.add(nombre);
                 xmlWriter.add(nombreEnd);

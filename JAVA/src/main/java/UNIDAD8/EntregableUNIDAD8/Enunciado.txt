@@ -1,4 +1,4 @@
-EJERCICIO 4: RECORRIENDO DOM
+EJERCICIO 1: RECORRIENDO DOM
 Crear una clase RecorridoDOM donde desde el método Main se llama a los siguientes métodos (que deberán ser estáticos):
 1) mostrarXML que partiendo del nodo raíz mostrará por pantalla el menú.
 2) cantidadDePlatos que mostrará por pantalla el número de platos de la carta.

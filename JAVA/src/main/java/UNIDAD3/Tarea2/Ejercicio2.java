@@ -1,5 +1,6 @@
 /*
-Diseñar una actividad que pida al usuario que introduzca una frase por teclado e indique cuántos espacios en blanco tiene.
+Diseñar una actividad que pida al usuario que introduzca una frase por teclado e indique cuántos espacios
+ en blanco tiene.
  */
 package UNIDAD3.Tarea2;
 
