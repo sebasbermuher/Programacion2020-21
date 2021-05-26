@@ -22,7 +22,7 @@ public class main {
             BufferedReader f = new BufferedReader(new FileReader(fichero));
             int x = f.read();
             while (x != -1) {
-                System.out.println((char) x);
+                System.out.print((char) x);
                 x=f.read();
             }
             f.close();
