@@ -10,6 +10,18 @@ public class Perro {
     private double peso;
     List<Consultas> lista_consultas = new LinkedList<>();
 
+    @Override
+    public String toString() {
+        return "Perro{" +
+                "pin=" + pin +
+                ", fecha_nam='" + fecha_nam + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", peso=" + peso +
+                '}';
+    }
+
+
+
     public Perro(int pin, String fecha_nam, String nombre, double peso) {
         this.pin = pin;
         this.fecha_nam = fecha_nam;

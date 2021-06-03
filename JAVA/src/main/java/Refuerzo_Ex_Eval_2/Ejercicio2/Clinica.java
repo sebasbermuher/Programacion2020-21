@@ -6,6 +6,13 @@ import java.util.*;
 public class Clinica {
     Map<Integer, Perro> mapa_perros = new TreeMap<>();
 
+    @Override
+    public String toString() {
+        return "Clinica{" +
+                "mapa_perros=" + mapa_perros +
+                '}';
+    }
+
     public Map<Integer, Perro> getMapa_perros() {
         return mapa_perros;
     }
@@ -35,12 +42,12 @@ public class Clinica {
 
     public void listaPerrosMedicinas(Medicinas medicinas) {
         List<Perro> perros = new LinkedList<>();
-        for (Map.Entry<Integer, Perro> entrada : mapa_perros.entrySet()) {
-            Iterator<Consultas> it = entrada.getValue().getLista_consultas().iterator();
-            while (it.hasNext()) {
-                Consultas c = it.next();
+        for (Map.Entry<Integer, Perro> p : mapa_perros.entrySet()) {
+            Iterator<Consultas> i = p.getValue().getLista_consultas().iterator();
+            while (i.hasNext()) {
+                Consultas c = i.next();
                 if (c.getMed().contains(medicinas)) {
-                    perros.add(entrada.getValue());
+                    perros.add(p.getValue());
                 }
             }
         }
