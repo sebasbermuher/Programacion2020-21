@@ -82,8 +82,8 @@ public class Coronavirus {
 
     public void pacientesDeUnDoctor(String num_colegiado) {
         Collection<Set<Pacientes>> conjunto = pacientes.values();
-        int cont_pacientes = 0;
         Iterator it = conjunto.iterator();
+        int cont_pacientes = 0;
         while (it.hasNext()) {
             Set<Pacientes> pacientes = (Set<Pacientes>) it.next();
 
@@ -100,62 +100,58 @@ public class Coronavirus {
     }
 
 
-    public void pacientesPorPeso(Cepa cepa) {
+    public void pacientesPorPeso(Cepa cepa) { //CORREGIDO
         if (!pacientes.containsKey(cepa)) {
-            System.out.println("Error");
+            System.out.println("Error, no hay pacientes infectado por la cepa introducida.");
         } else {
-            System.out.println(pacientes.get(cepa));
+            List<Pacientes> conjunto_pac = new ArrayList<>(pacientes.get(cepa));
+
+            Collections.sort(conjunto_pac, new Comparator<Pacientes>() {
+                        @Override
+                        public int compare(Pacientes pac1, Pacientes pac2) {
+                            return pac2.getPeso()-pac1.getPeso();
+                        }
+                    }
+            );
+            //conjunto_pac.addAll(pacientes.get(cepa)); //se duplican
+            System.out.println(conjunto_pac);
         }
     }
 
-    public void pacientesPorEdad(Cepa cepa) {
+    public void pacientesPorEdad(Cepa cepa) { //CORREGIDO
         if (!pacientes.containsKey(cepa)) {
-            System.out.println("(revisar) No hay pacientes");
+            System.out.println("Error, no hay pacientes infectado por la cepa introducida.");
         } else {
-            List<Pacientes> lista_pac = new ArrayList<>(pacientes.get(cepa));
+            List<Pacientes> conjunto_pac = new ArrayList<>(pacientes.get(cepa));
 
-            Collections.sort(lista_pac, new Comparator<Pacientes>() {
-
+            Collections.sort(conjunto_pac, new Comparator<Pacientes>() {
                 @Override
                 public int compare(Pacientes pac1, Pacientes pac2) {
                     return pac2.getEdad()-pac1.getEdad();
                 }
             }
             );
-            System.out.println(lista_pac);
+            //conjunto_pac.addAll(pacientes.get(cepa)); // se duplica
+            System.out.println(conjunto_pac);
         }
-
     }
+
 
     public void cargarPacientes() {
-        try {
-            ObjectInputStream fichero = new ObjectInputStream(new FileInputStream("JAVA/src/main/java/Refuerzo_Ex_Collection_y_Ficheros_2019_20/pacientes.dat"));
-            while (true) {
-                Pacientes pac = (Pacientes) fichero.readObject();
-                addPaciente(pac.getCepa(),pac);
-            }
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
+        try (ObjectInputStream fichero = new ObjectInputStream(new FileInputStream("JAVA/src/main/java/Refuerzo_Ex_Collection_y_Ficheros_2019_20/pacientes.dat"))) {
+            pacientes = (Map<Cepa, Set<Pacientes>>) fichero.readObject();
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
         }
-
     }
 
+
     public void guardarPacientes() {
-        try {
-            ObjectOutputStream fichero = new ObjectOutputStream(new FileOutputStream("JAVA/src/main/java/Refuerzo_Ex_Collection_y_Ficheros_2019_20/pacientes.dat"));
-            Collection<Set<Pacientes>> conjunto = pacientes.values();
-            Iterator it = conjunto.iterator();
-            while (it.hasNext()) {
-                Set<Pacientes> set_pac = (Set<Pacientes>) it.next();
-
-                for (Pacientes pac : set_pac) {
-                    fichero.writeObject(pac);
-                }
-            }
-            fichero.close();
-
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
+        try (ObjectOutputStream fichero =
+                     new ObjectOutputStream(new FileOutputStream("JAVA/src/main/java/Refuerzo_Ex_Collection_y_Ficheros_2019_20/pacientes.dat"))) {
+            fichero.writeObject(pacientes);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
