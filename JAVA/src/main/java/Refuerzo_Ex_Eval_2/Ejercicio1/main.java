@@ -7,7 +7,6 @@ public class main {
         AltavozTV tv1 = new AltavozTV(1, 2.5, 3, TipoDeInterfaz.IR);
 
 
-
         Revisiones revi2 = new Revisiones("07/02/2010", false, 18.90);
 
         AltavozTV tv2 = new AltavozTV(2, 3, 3, TipoDeInterfaz.Jack);

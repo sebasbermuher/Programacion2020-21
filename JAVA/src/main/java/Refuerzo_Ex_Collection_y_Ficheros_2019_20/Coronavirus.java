@@ -102,7 +102,7 @@ public class Coronavirus {
 
     public void pacientesPorPeso(Cepa cepa) {
         if (!pacientes.containsKey(cepa)) {
-            System.out.println("No hay perros inscritos de esa raza");
+            System.out.println("Error");
         } else {
             System.out.println(pacientes.get(cepa));
         }
@@ -116,15 +116,12 @@ public class Coronavirus {
 
             Collections.sort(lista_pac, new Comparator<Pacientes>() {
 
-                //mirar eliminando new comparator etc...
-
                 @Override
                 public int compare(Pacientes pac1, Pacientes pac2) {
                     return pac2.getEdad()-pac1.getEdad();
                 }
             }
             );
-
             System.out.println(lista_pac);
         }
 
