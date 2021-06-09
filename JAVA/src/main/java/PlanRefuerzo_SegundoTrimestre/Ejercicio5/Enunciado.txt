@@ -1,0 +1,12 @@
+La policía durante este confinamiento y para gestionar las posibles
+multas a aquellos ciudadanos necesita tener a su disposición las salidas
+de los ciudadanos. Para ello elaboraremos una aplicación.
+Desde la aplicación para gestionar todo esto deberemos:
+● Insertar los datos de un ciudadano concreto.
+● Añadir una salida a un ciudadano para una fecha determinada.
+Podrá ser (Compra, Deporte, Paseo).
+● Comprobar un número de salida que un ciudadano en una fecha
+determinada.
+● Mostrar la multa que se le va que corresponde a un ciudadano.
+Será 600€ por el número de visitas del mismo tipo (quitando la
+salida de cada tipo a la que tienen derecho.

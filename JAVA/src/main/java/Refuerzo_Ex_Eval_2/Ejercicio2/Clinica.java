@@ -27,7 +27,7 @@ public class Clinica {
     }
 
     public void eliminarPerro(Perro perro) {
-        getMapa_perros().remove(perro);
+        getMapa_perros().remove(perro.getPin());
         System.out.println("El perro ha sido eliminado");
     }
 

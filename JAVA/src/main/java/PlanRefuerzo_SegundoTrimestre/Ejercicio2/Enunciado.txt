@@ -1,0 +1,7 @@
+Modificar las clases del ejercicio uno añadiendo los atributos y
+métodos de clase necesarios para controlar en todo momento el
+número de aviones y pasajeros que se han creado.
+Demostrar la utilización de estos atributos y/o métodos en un Main
+donde se creen 5 aviones y 10 pasajeros.
+Debemos mostrar el mensaje que nos indique cuántos objetos de cada
+clase hemos creado cada vez que creemos un objeto nuevo.

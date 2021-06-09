@@ -1,0 +1,22 @@
+Crear una clase Vuelo:
+Para dicha clase deberemos guardar (al menos):
+● El avión con el que se realiza el vuelo.
+● La fecha del vuelo.
+● El nombre del aeropuerto de origen
+● El nombre del aeropuerto de destino
+● La lista de pasajeros del vuelo.
+Además de los métodos básicos (constructores, getter / setters / equals)
+que consideréis oportunos debéis implementar el siguiente
+comportamiento:
+● Un método para añadir un pasajero al vuelo. addPassenger(). Se
+le pasará como parámetro un objeto pasajero. Si el pasajero ya
+3
+estaba en la lista de pasajeros deberá mostrar un mensaje de
+error.
+● Un método para borrar un pasajero. delPassenger(). Se le pasará
+como parámetro el número de pasaporte del pasajero. Si el
+pasajero no estaba en la lista de pasajeros deberá mostrar un
+mensaje de error.
+● Un método que listPassengers() que muestre por pantalla la lista
+de pasajeros.
+s

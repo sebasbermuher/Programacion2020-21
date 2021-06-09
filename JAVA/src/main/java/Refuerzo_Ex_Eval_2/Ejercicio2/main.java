@@ -26,10 +26,8 @@ public class main {
         p1.anadirconsulta(cons2); // añade consulta (cons2) al perro (p1)
         p1.eliminarconsulta(cons2); // elimina consulta (cons2) al perro (p1)
 
-
        cli1.anadir_perro(p1); // añade perro (p1) a la clinica (cli1)
-        cli1.eliminarPerro(p1); // elimina perro (p1) a la clinica (cli1)
-        cli2.anadir_perro(p1); // añade perro (p1) a la clinica (cli2)
-
+       cli1.eliminarPerro(p1); // elimina perro (p1) a la clinica (cli1)
+       cli2.anadir_perro(p1); // añade perro (p1) a la clinica (cli2)
     }
 }

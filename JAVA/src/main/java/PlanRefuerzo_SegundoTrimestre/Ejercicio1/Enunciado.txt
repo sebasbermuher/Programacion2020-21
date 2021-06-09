@@ -1,0 +1,22 @@
+Implementar la siguientes clases decidiendo los tipos de datos
+correctos, con lo métodos solicitados e implementando los métodos
+como consideres oportuno (puede ser simplemente un mostrar un
+mensaje). Reflexiona y repasa los conceptos Clase, Objeto, Atributos,
+Visibilidad de Atributos.
+Deberéis explicar en los comentarios todas las decisiones tomadas.
+Clase Avión:
+● Propiedades: Aerolínea, Longitud, Modelo, ModoVuelo que podrá
+tomar los siguiente valores (MANUAL, CRUCERO,
+PILOTO_AUTOMÁTICO)
+● Comportamiento: despegar(), aterrizar(), volar()
+Clase Pasajero:
+● Propiedades: Nombre,Dirección y número de pasaporte y estado
+(EMBARCADO, PENDIENTE)
+● Comportamiento: embarcar() , sonreir() , andar()
+Además de los métodos solicitados deberéis implementar los
+constructores que consideréis oportunos, los getter/setter, equals y el
+método toString() para ambas clases.
+2
+Crear en un Main.java dos objetos de la clase avión y 5 objetos de la
+clase Pasajero. Utilizar para cada objeto algún método de los
+implementados.

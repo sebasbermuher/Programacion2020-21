@@ -1,0 +1,71 @@
+EJERCICIO 1
+
+Queremos desarrollar una aplicación para guardar la información de una empresa que fabrica Altavoces artesanales y de alta gama. Esto requiere el desarrollo de una jerarquía de clases. La primera clase a desarrollar será la clase Altavoz.
+
+La clase Altavoz será una clase no instanciable de la que derivan tres clases, las clases AltavozTV, AltavozMovil y AltavozCoche que a su vez es no instanciable.
+
+Todos los altavoces tienen un número de serie y deberemos guardar también la altura y anchura de los mismos.
+
+Como todos los altavoces son artesanales y están hecho a mano, para todos guardamos en un Array la lista de las revisiones que han sufrido. De cada revisión se guarda la fecha de la misma, si el altavoz estaba en buen estado o no y el precio de la visita. No puede haber dos revisiones en la misma fecha (por simplicidad podemos usar una cadena para las fechas).
+
+Adicionalmente a los atributos por defecto tenemos que tener en consideración las siguientes afirmaciones:
+
+
+Para la clase AltavozTV tenemos que guardar el tipo de interfaz que tiene para conectarse con la TV pudiendo ser (BlueTooth, IR y Jack)
+
+
+
+Para todos aquellos objetos que sean de la clase AltavozMovil tenemos que guardar adicionalmente el peso del mismo.
+
+
+
+Los AltavoceCoche podrán ser a su vez de dos tipos, AltavozEmpotrable y AltavozTrasero. De los primeros guardaremos en qué sitio del vehículo se ha instalado pudiendo ser (Puerta o Salpicadero) mientras que para los segundos deberemos además guardar dos atributos: la potencia en W y si se le incrustan elementos decorativos luminosos.
+
+
+Deberemos implementar los siguiente métodos donde se estime conveniente:
+
+
+delReview que borrará una revisión a un Altavoz. Devolverá true si se borra y false si no existe esa revisión en el array de revisiones.
+
+
+
+mostrarRevisiones mostrará las revisiones del Altavoz ordenadas por precio ascendente.
+
+
+
+Un método de clase que nos devuelva el número de altavoces creados hasta ahora.
+
+
+Los Altavoces de coche instanciables debe implementar el interfaz Grave con el método activarGraves que mostrarán un mensaje por pantalla distinto dependiendo de la clase pero que tendrá también una implementación por defecto.
+
+Probar todos lo métodos en un Main.java creando un Altavoz de cada clase y Añadiendo al menos 2 revisiones a un altavoz.
+
+NOTA: Todo los atributos debe ser privados. Haced los getters/setters/constructores y demás métodos básicos que consideréis necesarios.
+
+
+
+UNIDAD 6 y 7 - Ficheros y Collections
+
+EJERCICIO 2
+
+Queremos realizar una aplicación para gestionar una clínica canina. Para ello crearemos una clase Clínica en la que guardaremos toda la información de cada uno de los perros que acuden en un Mapa cuya clave será el pin de cada Perro.
+
+Para cada perro que viene a la clínica además del pin debemos guardar la fecha de nacimiento, el nombre, el peso y la lista de consultas que ha recibido. Para cada consulta debemos guardar la fecha, el diagnóstico (un texto) y el conjunto de medicinas que se le han aplicado de las que guardaremos el nombre, la cantidad y el precio.
+
+La clase perro, por lo tanto debe tener los métodos necesarios para añadir y borrar las consultas que se realicen al perro.
+
+Además para toda esta gestión deberemos tener los siguiente métodos en la clínica:
+
+
+addConsulta que recibirá como parámetro un Perro y una consulta y que deberá comprobar que ya tenemos registro del perro en la clínica y si no es así añadirlo al mapa para posteriormente asociar la consulta al perro.
+
+
+
+listaPerrosMedicina que recibirá el nombre de una medicina y mostrará el nombre de todos los perros  a los que se les ha aplicado esa medicina.
+
+
+Al iniciarse el programa deberemos cargar del fichero perros.dat los perros existentes colocándolos de manera correcta por su pin y al acabar el fichero deberemos escribir los perros que tenemos guardados en la clase Clínica.
+
+Probar todos los métodos en un Main.java
+
+NOTA: Todo los atributos debe ser privados. Haced los getters/setters/constructores y demás métodos básicos que consideréis necesarios.

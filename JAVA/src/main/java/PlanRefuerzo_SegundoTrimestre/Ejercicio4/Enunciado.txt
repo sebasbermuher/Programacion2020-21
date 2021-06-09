@@ -1,0 +1,18 @@
+Crear una clase Aereopuerto para gestionar los vuelos. De los
+aeropuertos necesitamos guardar (al menos):
+● El nombre del aeropuerto.
+● La lista de vuelos del aeropuerto.
+Necesitaré además, para definir el comportamiento:
+● método para añadir vuelos al aeropuerto (debemos comprobar
+que el vuelo sale del mismo aeropuerto al que los estamos
+añadiendo)
+● Método para eliminar vuelos de un aeropuerto. Deberá comprobar
+que el vuelo existe
+4
+● Método para mostrar los vuelos de una determinada fecha que
+pasaré como parámetro. Si no hay vuelos ese día mostrará un
+mensaje con esa información.
+Crear en un Main.java dos vuelos con 2 aeropuertos cada uno con 2
+vuelos con 2 pasajeros cada uno. Utilizar al menos una vez los métodos
+solicitados para aeropuerto.
+s
