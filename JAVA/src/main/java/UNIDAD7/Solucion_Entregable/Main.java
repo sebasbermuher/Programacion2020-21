@@ -7,8 +7,8 @@ public class Main {
         Unidad u2 = new Unidad("2ºB");
         Unidad u3 = new Unidad("3ºA");
 
-        Alumno a1 = new Alumno("alvaro", "garcia", "111111", u2);
-        Alumno a2 = new Alumno("bartolo", "dominguez", "22222", u3);
+        Alumno a1 = new Alumno("alvaro", "garcia", "111111", u1);
+        Alumno a2 = new Alumno("bartolo", "dominguez", "22222", u1);
         Alumno a3 = new Alumno("carlos", "jerez", "33333", u1);
         Alumno a4 = new Alumno("damian", "bernabe", "44444", u2);
         Alumno a5 = new Alumno("eduardo", "kilombo", "55555", u3);

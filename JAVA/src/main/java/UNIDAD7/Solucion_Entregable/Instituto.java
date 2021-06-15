@@ -61,7 +61,7 @@ public class Instituto {
 
     public void cargarAlumnos() {
         try (ObjectInputStream in =
-                     new ObjectInputStream(new FileInputStream("ficheros/alumnos.dat"))) {
+                     new ObjectInputStream(new FileInputStream("alumnos.dat"))) {
             // Esto sobra, pero borro por si acaso para añadir la info que cargo del fichero.
             unidades.clear();
             while (true) {
@@ -78,7 +78,7 @@ public class Instituto {
 
     public void guardarAlumnos() {
         try (ObjectOutputStream out =
-                     new ObjectOutputStream(new FileOutputStream("ficheros/alumnos.dat"))) {
+                     new ObjectOutputStream(new FileOutputStream("alumnos.dat"))) {
             out.writeObject(unidades);
         } catch (IOException e) {
             System.out.println("Error al guardar el fichero: " + e.getMessage());

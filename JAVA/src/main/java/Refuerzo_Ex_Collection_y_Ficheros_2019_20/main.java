@@ -3,7 +3,6 @@ package Refuerzo_Ex_Collection_y_Ficheros_2019_20;
 import java.util.HashMap;
 import java.util.Set;
 
-
 public class main {
     public static void main(String[] args) {
         Coronavirus corona = new Coronavirus(new HashMap<Cepa, Set<Pacientes>>(),"COVID-19","Wuhan");
